@@ -17,6 +17,15 @@ const BookingForm = (props) => {
         props.submitForm(e);
     }
 
+    const getFormValid = () => {
+        return (
+        date &&
+        time &&
+        guests &&
+        occasion
+        )
+    }
+
     return (
         <header>
             <section>
@@ -55,7 +64,7 @@ const BookingForm = (props) => {
                         </div>
 
                         <div className="btnReceive">
-                            <input aria-label="on Click" type="submit" value={"Make Your Reservation"}/>
+                            <button aria-label="on Click" type="submit" value={"Make Your Reservation"} disabled={!getFormValid()}>Make Your Reservation</button>
                         </div>
                     </fieldset>
                 </form>

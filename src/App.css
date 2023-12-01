@@ -145,7 +145,16 @@ input, label{
   border-radius: 2px;
 }
 
-.btnReceive input{
+.btnReceive button{
+  padding: 12px 16px;
+  margin-top: 20px;
+  background: #F4CE14;
+  color: black;
+  border: none;
+  border-radius: 4px;
+}
+
+/* .btnNotReceive input{
   padding: 12px 16px;
   margin-top: 20px;
   background: #495e57;
@@ -153,6 +162,16 @@ input, label{
   border: none;
   border-radius: 4px;
 
+} */
+.btnReceive button:disabled,
+.btnReceive button[disabled]{
+  padding: 12px 16px;
+  margin-top: 20px;
+  background: #495e57;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: not-allowed;
 }
 
 .confirm span{
