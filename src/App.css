@@ -136,7 +136,9 @@ input, label{
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 20px;
+  border-radius: 4px;
 }
+
 #book-date, #book-time, #book-guests, #book-occasion{
   background: #bdbdbd43;
   padding: 8px 24px;
@@ -328,4 +330,80 @@ footer ul li{
 
 .hidden{
   display: none;
+}
+
+.loginBtn {
+  display: flex;
+}
+.loginBtn button:disabled,
+.loginBtn button[disabled]{
+  background: #495E57;
+  color: #fff;
+  border: none;
+  cursor: not-allowed;
+  border: 1px solid #F4CE14;
+}
+
+.loginBtns {
+  margin-right: 0.6em;
+  background-color: #F4CE14;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  border: 1px solid #495E57;
+}
+
+.loginInput {
+  display: flex;
+  flex-direction: column;
+}
+
+.storeList {
+  display: flex;
+  flex-direction: column;
+}
+
+.storeList1 {
+  display: flex;
+}
+.listBtns {
+  margin-right: 0.6em;
+  background-color: #495E57;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  height: 30px;
+  margin: 19px;
+  padding: 5px;
+  width: 90px;
+}
+
+.titleList{
+  margin-right: 20px;
+}
+
+.tpriceList{
+  margin-left: 20px;
+  color: blue;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+.alert {
+  color: #495E57;
+  display: flex;
+  justify-content: center;
+  margin: 200px auto;
 }

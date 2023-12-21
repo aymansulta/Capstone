@@ -4,6 +4,8 @@ import Header from './Header';
 import Booking from './Booking';
 import ConfirmedBooking from "./ConfirmedBooking";
 import Login from "./Login";
+import Store from "./Store";
+import Menu from "./Menu";
 
 const Main = () => {
 
@@ -56,6 +58,8 @@ const Main = () => {
                 <Route path='/booking' element={<Booking availableTimes={state} dispatch={dispatch} submitForm={submitForm} />} />
                 <Route path='/confirmed' element={<ConfirmedBooking />} />
                 <Route path="/login" element={<Login />} />
+                <Route path="/store" element={<Store />} />
+                <Route path="/menu" element={<Menu />} />
             </Routes>
         </main>
     )
