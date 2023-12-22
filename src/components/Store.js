@@ -1,7 +1,7 @@
-import { db, auth, storage } from "../config/firebase";
+import { auth, storage } from "../config/firebase";
 import { getDocs, collection, addDoc, deleteDoc, doc, updateDoc, onSnapshot } from 'firebase/firestore';
 import { ref, uploadBytes } from 'firebase/storage';
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useFirebase } from './FirebaseContext';
 
 
